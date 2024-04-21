@@ -3,8 +3,9 @@ import { useState } from 'react'
 import './App.css'
 import { Route, Routes, useNavigate } from 'react-router-dom'
 import Signup from './component/signup/Signup'
-import Landing from './component/navBar/Navbar'
+
 import Home from './pages/Home/Home'
+import Landing from './pages/landing page/Landing'
 
 function App() {
  
@@ -15,7 +16,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
       </Routes>
       <Routes>
-        <Route path="/users" element={<Landing/>}/>
+        <Route path="/landing" element={<Landing/>}/>
       </Routes>
     </>
   )
