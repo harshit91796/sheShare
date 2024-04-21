@@ -1,0 +1,227 @@
+
+.container{
+  height: 100vh;
+  position: absolute;
+}
+
+.imgDiv{
+    /* position: absolute; */
+}
+
+.linkDiv{
+  background-color: #ECEADB;
+  width: 100vw;
+  height: 100vh;
+  z-index: 6;
+}
+
+.linkButton{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  height: 100vh;
+  width: 100%;
+}
+
+.linkBottom{
+  display: flex;
+  /* flex-direction: row; */
+  gap: 5px;
+}
+
+
+
+.linkText{
+  position: relative;
+  color: aliceblue;
+  font-weight: bold;
+  top: 160px;
+}
+
+
+.button1 img{
+  background-color: blue;
+  color: white;
+  width: 300px;
+  height: 300px;
+  
+}
+
+.button2 img{
+  background-color: red;
+  color: white;
+  width: 300px;
+  height: 300px;
+}
+
+.midDiv{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.midDivTop{
+    display: flex;
+    animation: moveImages 20s linear infinite;
+  }
+  @keyframes moveImages {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+.midDivBottom {
+  display: flex;
+  animation: moveImages1 20s linear infinite;
+}
+@keyframes moveImages1 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.textAbout{
+    font-size: 2rem;
+    /* background: rgba(0, 0, 0, 0); */
+    font-weight: 500;
+
+}
+
+
+.animation-container{
+    /* background-color: aqua; */
+    overflow: hidden; /* Clip overflowing content */
+    position: relative; /* Position relative to the viewport */
+    /* Set the height to 100% of the viewport height */
+    width: 40%;
+    height: 550px;
+    top: 120px;
+    font-size: 2rem;
+    /* background: rgba(0, 0, 0, 0); */
+    margin-left: 60%;
+  }
+
+.animation-container1{
+  /* background-color: azure; */
+  overflow: hidden; /* Clip overflowing content */
+  position: relative; /* Position relative to the viewport */
+  /* Set the height to 100% of the viewport height */
+  width: 40%;
+  height: 150px;
+  top: 150px;
+  font-size: 2rem;
+  /* background: rgba(0, 0, 0, 0); */
+  margin-left: 60%;
+
+}
+
+.animation-container2{
+  /* background-color: aqua; */
+  overflow: hidden; /* Clip overflowing content */
+  position: relative; /* Position relative to the viewport */
+  /* Set the height to 100% of the viewport height */
+  width: 40%;
+  height: 100px;
+  top: 150px;
+  font-size: 2rem;
+  /* background: rgba(0, 0, 0, 0); */
+  margin-left: 60%;
+
+}
+
+.animation-container3{
+  background-color: azure;
+  overflow: hidden; /* Clip overflowing content */
+  position: relative; /* Position relative to the viewport */
+  /* Set the height to 100% of the viewport height */
+  width: 40%;
+  height: 550px;
+  top: 150px;
+  font-size: 2rem;
+  /* background: rgba(0, 0, 0, 0); */
+  margin-left: 60%;
+
+}
+ 
+
+  
+  .animate-text {
+    animation: slide-in 1s ease-in-out forwards; /* Animation definition */
+    opacity: 0; /* Initially invisible */
+  }
+
+  .animate-text2{
+    animation: slide-in 2s ease-in-out forwards; /* Animation definition */
+  }
+  
+  .animate-text3{
+    animation: slide-in 2s ease-in-out forwards; /* Animation definition */
+  }
+
+  .animate-text4{
+    animation: slide-in 1s ease-in-out forwards; /* Animation definition */
+  }
+
+  .animate-text5{
+    animation: slide-in 2s ease-in-out forwards; /* Animation definition */
+  }
+
+  .animate-text6{
+    animation: slide-in 3s ease-in-out forwards; /* Animation definition */
+  }
+
+  .animate-text7{
+    animation: slide-in 2s ease-in-out forwards; /* Animation definition */
+  }
+
+  .animate-text8{
+    animation: slide-in 2s ease-in-out forwards; /* Animation definition */
+  }
+
+  .animate-text9{
+    animation: slide-in 2s ease-in-out forwards; /* Animation definition */
+  }
+
+  @keyframes slide-in {
+    from {
+      transform: translateX(100%); /* Start from off-screen left */
+    }
+    to {
+      transform: translateX(0); /* End in original position */
+      opacity: 1; /* Become fully visible */
+    }
+  }
+  
+  
+/* responsive */
+
+@media screen and (max-width: 768px) {
+    .animation-container {
+      width: 100%;
+      margin-left: 0;
+    }
+    .animation-container1 {
+      width: 100%;
+      margin-left: 0;
+    }
+    .animation-container2 {
+      width: 100%;
+      margin-left: 0;
+    }
+    .animation-container3 {
+      width: 100%;
+      margin-left: 0;
+    }
+   
+    .textAbout {
+      font-size: 1.5rem;
+    }
+    
+  }

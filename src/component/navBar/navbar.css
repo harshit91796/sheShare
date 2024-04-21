@@ -1,0 +1,59 @@
+.navbar {
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0); /* Optional shadow */
+    padding: 1rem 2rem; /* Adjust padding if needed */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+  }
+  
+  .navbar ul a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem; /* Base font size */
+    padding: 0.5rem 1rem; /* Adjust padding if needed */
+    transition: font-size 0.2s ease-in-out, color 0.2s ease-in-out; /* Smooth transition */
+  }
+  
+  .navbar a:hover {
+    font-size: 2rem; /* Font size on hover */
+    color: skyblue; /* Hover color */
+  }
+  
+  .navbar a {
+    font-weight: bold;
+    font-size: 1.5rem; /* Base font size */
+    padding: 0.5rem 1rem; /* Adjust padding if needed */
+    transition: font-size 0.2s ease-in-out, color 0.2s ease-in-out; /* Smooth transition */
+  }
+  
+  /* .boxOne{
+    transform: translate(0px, 279px) scale(5.5);
+  } */
+  
+
+  /* responsive */
+
+  @media screen and (max-width: 768px) {
+    .navbar a {
+      font-size: 0.8rem; /* Adjust font size for smaller screens */
+      padding: 0.25rem 0.5rem; /* Adjust padding for smaller screens */
+      width: 100%;
+    }
+
+    .navbar li {
+      margin-right: 0.5rem; /* Adjust spacing between links for smaller screens */
+    }
+
+    .navbar {
+      padding: 0.5rem 1rem; /* Adjust padding for smaller screens */
+      width: 100%;
+      /* Adjust font size for smaller screens */
+      font-size: 0.8rem;
+
+    }
+  }
